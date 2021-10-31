@@ -69,7 +69,7 @@ public final class MainFrame extends JFrame implements ActionListener {
         panelOptions.setLayout(layout);
         
         // Criando uma label e add no topo do painel inicial, somente um subtitulo
-        JLabel label = new JLabel("                                 Plotting curves into Java"); 
+        JLabel label = new JLabel("                                 Graph plotting in Java"); 
         panelOptions.add(label);
         
         //Cria vetor de checkBoxes e já adiociona no JFrame inicial
@@ -104,7 +104,7 @@ public final class MainFrame extends JFrame implements ActionListener {
 
         String[] variableNames = new String[variableToBePlot.size()];
         
-        //Função que vai converter um tableau dynamique em tableau statique//Ajuda prof
+        //Função que vai converter um tableau dynamique em tableau statique
         variableToBePlot.toArray(variableNames); 
         
         //Agora, nós vamos chamar a função getPlot corretamente com o tableau de strings

@@ -5,19 +5,22 @@
  */
 package gui;
 
-import data.DataContainer;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.swing.JPanel;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.data.time.Hour;
 import org.jfree.data.time.TimeSeries;
 import org.jfree.data.time.TimeSeriesCollection;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
+import data.DataContainer;
 
 /**
  *
