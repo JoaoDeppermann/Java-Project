@@ -42,8 +42,8 @@ It is considered that the number of motions detected within an hour is proportio
        • ζdoor --> It is worth 0 when it is always closed and 1 when it is opened
 
 - The air mass balance leads to:
-       • V dΓoffice/dt = −(Qout + Qcorridor)Γoffice + QoutΓout + QcorridorΓcorridor +Sbreath*n
-       Where:
+       <p>• V dΓoffice/dt = −(Qout + Qcorridor)Γoffice + QoutΓout + QcorridorΓcorridor +Sbreath*n</p> 
+       <p>Where:</p> 
        • Γ, the CO2 concentration and Qout ≈ 395ppm, the outdoor average CO2 concentration
        • V , the room volume i.e. 55m3 for the office
        • Sbreath, the average CO2 production per occupant. It is estimated to be 4ppm.m3/s
@@ -61,6 +61,7 @@ The estimate comes directly from the equation. It yields:
        ![image](https://user-images.githubusercontent.com/49452402/139601354-fc2579a3-b296-4ade-8154-a16a6803a138.png)
 
 In order to produce numerical answers, I used the following values for the variables:
+-
        • Qout(0) = 25/3600 m3/s
        • Qcorridor(0) = 25/3600 m3/s
        • Qwindow_out = 150/3600 m3/s
