@@ -25,7 +25,7 @@ It is considered that the number of motions detected within an hour is proportio
 ![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png) 
 
 ### 3. CO2 concentration
-- In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
+<p>In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:</p> 
        • Qout = Qout(0) + ζwindow*Qwindow_out
        Where:
        • Qout --> Air flow exchanged from indoor and outdoor.
