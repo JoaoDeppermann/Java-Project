@@ -6,7 +6,7 @@ Even though the project is quite simple and was used for learning purposes (I wa
 
 ## General objective
 
-The objective is to develop a tool in Java that is able to estimate, based on the "Office.csv" file, the occupancy of the following office:
+The objective is to develop a tool in Java that is able to estimate, based on the "office.csv" file, the occupancy of the following office:
 
 ![image](https://user-images.githubusercontent.com/49452402/139596994-101fa9d1-5486-4ad3-b401-18aae12d03d6.png)
 
@@ -70,8 +70,32 @@ In order to produce numerical answers, I used the following values for the varia
        • Qwindow_out = 150/3600 m3/s
        • Qdoor_corridor = 150/3600 m3/s
  
+## Architecture used (UML diagram)
+
+![image](https://user-images.githubusercontent.com/49452402/139602362-38e0f680-5335-420b-ac93-03f0feef9acd.png)
+
 
 ## Results
-            
+
+The use of this tool is simple and accessible to all. The user has to choose the variables he wants to analyze and then he just has to click on the "plot" button to receive the graphic representation of the selected variables.
+An example of how to use the application is given below, where we can see the difference between the estimates made from the consumption of the laptops and the one from the movements detected in the office:
+
+![Occuppancy estimated via detected motions Vs laptop consumption](https://user-images.githubusercontent.com/49452402/139602912-b688f7dd-248d-4832-bc28-5eee76c0c88e.png)
+
+We can also visualize other data for additional analysis 
+![Office CO2 concentration Vs corridor CO2 concentration](https://user-images.githubusercontent.com/49452402/139602898-7c5ab33b-cce0-47a0-9375-601720240d45.png)
+
+![Occuppancy estimated via detected motions](https://user-images.githubusercontent.com/49452402/139602885-45e0dad3-4dda-4e8a-b094-603a53530f49.png)
+
+![Occuppancy estimated via laptop consumption](https://user-images.githubusercontent.com/49452402/139602890-107f4670-ea16-4bcf-b095-c30c93fde0f3.png)
+
+
+## Tech stack
+
+• Java
+
+
+
+
           
             
