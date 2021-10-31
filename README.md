@@ -20,10 +20,9 @@ The consumption of each one of the 4 laptops is measured by a power meter (varia
 ### Motion detections
 It is considered that the number of motions detected within an hour is proportional to the number of occupants in the office. In order to determine the best proportional coefficient, a simple dichotomy algorithm (considering the laptop consumption based estimation as the actual occupancy) was implemented in the "DichotomicScaler" class.
 
-<details>
-   <summary>Dichotomy algorithm</summary>
+<p>Dichotomy algorithm</p>
+         
 ![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png) 
-</details>
 
 ### CO2 concentration
 - In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
