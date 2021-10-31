@@ -21,7 +21,6 @@ The consumption of each one of the 4 laptops is measured by a power meter (varia
 It is considered that the number of motions detected within an hour is proportional to the number of occupants in the office. In order to determine the best proportional coefficient, a simple dichotomy algorithm (considering the laptop consumption based estimation as the actual occupancy) was implemented in the "DichotomicScaler" class.
 
 <p>Dichotomy algorithm</p>
-         
 ![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png) 
 
 ### CO2 concentration
@@ -49,14 +48,13 @@ It is considered that the number of motions detected within an hour is proportio
        • Sbreath, the average CO2 production per occupant. It is estimated to be 4ppm.m3/s
        • n, the number of occupants in the office
 
-Considering average values over a time period of Ts = 3600 seconds, the differential equation can be solved to get a recurrent equation (Xk means average value of X during period [kTs, (k +1)Ts]:
-- 
+<p>Considering average values over a time period of Ts = 3600 seconds, the differential equation can be solved to get a recurrent equation (Xk means average value of X during period [kTs, (k +1)Ts]:</p> 
+
 ![image](https://user-images.githubusercontent.com/49452402/139601293-f9030b13-5367-4cf1-8b6d-2b6353bd8edc.png)
 
-<p></p>
 Where:
 ![image](https://user-images.githubusercontent.com/49452402/139601301-93264c0b-a555-46f6-ad87-04966f63e21d.png)
-<p></p>
+
 The estimate comes directly from the equation. It yields:
        ![image](https://user-images.githubusercontent.com/49452402/139601354-fc2579a3-b296-4ade-8154-a16a6803a138.png)
        In order to produce numerical answers, I used the following values for the variables:
