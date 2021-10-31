@@ -83,6 +83,7 @@ An example of how to use the application is given below, where we can see the di
 ![Occuppancy estimated via detected motions Vs laptop consumption](https://user-images.githubusercontent.com/49452402/139602912-b688f7dd-248d-4832-bc28-5eee76c0c88e.png)
 
 We can also visualize other data for additional analysis 
+
 ![Office CO2 concentration Vs corridor CO2 concentration](https://user-images.githubusercontent.com/49452402/139602898-7c5ab33b-cce0-47a0-9375-601720240d45.png)
 
 ![Occuppancy estimated via detected motions](https://user-images.githubusercontent.com/49452402/139602885-45e0dad3-4dda-4e8a-b094-603a53530f49.png)
