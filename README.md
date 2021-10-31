@@ -25,7 +25,8 @@ It is considered that the number of motions detected within an hour is proportio
 ![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png) 
 
 ### 3. CO2 concentration
-<p>In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:</p> 
+In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
+       
        • Qout = Qout(0) + ζwindow*Qwindow_out
        Where:
        • Qout --> Air flow exchanged from indoor and outdoor.
@@ -33,7 +34,8 @@ It is considered that the number of motions detected within an hour is proportio
        • ζwindow*Qwindow_out --> Average constant renewal air flow going through the window when it is opened
        • ζwindow --> It is worth 0 when it is always closed and 1 when it is opened
 
-- In the same way, the renewable of air flow through the door is given by:
+In the same way, the renewable of air flow through the door is given by:
+
        • Qcorridor = Qdoor(0) + ζdoor*Qdoor_corridor
        Where:
        • Qcorridor --> Air flow exchanged from indoor and outdoor.
@@ -41,9 +43,10 @@ It is considered that the number of motions detected within an hour is proportio
        • ζdoor*Qdoor_corridor --> Average constant renewal of air flow going through the corridor when the door is opened
        • ζdoor --> It is worth 0 when it is always closed and 1 when it is opened
 
-- The air mass balance leads to:
-       <p>• V dΓoffice/dt = −(Qout + Qcorridor)Γoffice + QoutΓout + QcorridorΓcorridor +Sbreath*n</p> 
-       <p>Where:</p> 
+The air mass balance leads to:
+
+       • V dΓoffice/dt = −(Qout + Qcorridor)Γoffice + QoutΓout + QcorridorΓcorridor +Sbreath*n
+       Where:
        • Γ, the CO2 concentration and Qout ≈ 395ppm, the outdoor average CO2 concentration
        • V , the room volume i.e. 55m3 for the office
        • Sbreath, the average CO2 production per occupant. It is estimated to be 4ppm.m3/s
