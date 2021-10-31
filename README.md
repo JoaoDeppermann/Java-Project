@@ -14,17 +14,17 @@ The objective is to develop a tool in Java that is able to estimate, based on th
 
 Given the data provided in the .csv file, it is possible to estimate the occupation of the office in 3 different ways:
 
-### Laptop power consumption
+### 1. Laptop power consumption
 The consumption of each one of the 4 laptops is measured by a power meter (variable ‘power_laptopX_zoneY’). If the average consumption is greater than the standby consumption (15W), it is considered that someone is working on the computer
       
-### Motion detections
+### 2. Motion detections
 It is considered that the number of motions detected within an hour is proportional to the number of occupants in the office. In order to determine the best proportional coefficient, a simple dichotomy algorithm (considering the laptop consumption based estimation as the actual occupancy) was implemented in the "DichotomicScaler" class.
 
 <p>Dichotomy algorithm:</p>
 
 ![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png) 
 
-### CO2 concentration
+### 3. CO2 concentration
 - In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
        • Qout = Qout(0) + ζwindow*Qwindow_out
        Where:
@@ -57,7 +57,7 @@ It is considered that the number of motions detected within an hour is proportio
 
 ![image](https://user-images.githubusercontent.com/49452402/139601301-93264c0b-a555-46f6-ad87-04966f63e21d.png)
 
-<p>The estimate comes directly from the equation. It yields:</p> 
+- The estimate comes directly from the equation. It yields:
        ![image](https://user-images.githubusercontent.com/49452402/139601354-fc2579a3-b296-4ade-8154-a16a6803a138.png)
        In order to produce numerical answers, I used the following values for the variables:
        • Qout(0) = 25/3600 m3/s
