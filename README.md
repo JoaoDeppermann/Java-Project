@@ -79,6 +79,7 @@ In order to produce numerical answers, I used the following values for the varia
 ## Results
 
 The use of this tool is simple and accessible to all. The user has to choose the variables he wants to analyze and then he just has to click on the "plot" button to receive the graphic representation of the selected variables.
+
 An example of how to use the application is given below, where we can see the difference between the estimates made from the consumption of the laptops and the one from the movements detected in the office:
 
 ![Occuppancy estimated via detected motions Vs laptop consumption](https://user-images.githubusercontent.com/49452402/139602912-b688f7dd-248d-4832-bc28-5eee76c0c88e.png)
