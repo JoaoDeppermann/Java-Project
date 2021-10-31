@@ -19,14 +19,14 @@ The consumption of each one of the 4 laptops is measured by a power meter (varia
       
 ### Motion detections
 It is considered that the number of motions detected within an hour is proportional to the number of occupants in the office. In order to determine the best proportional coefficient, a simple dichotomy algorithm (considering the laptop consumption based estimation as the actual occupancy) was implemented in the "DichotomicScaler" class.
+
 <details>
-   <summary>Dichotomy algorithm
-   </summary>
-   ![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png) 
+   <summary>Dichotomy algorithm</summary>
+![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png) 
 </details>
 
 ### CO2 concentration
-In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
+- In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
        • Qout = Qout(0) + ζwindow*Qwindow_out
        Where:
        • Qout --> Air flow exchanged from indoor and outdoor.
@@ -34,7 +34,7 @@ In order to estimate the occupancy based on the CO2 level, it is necessary to st
        • ζwindow*Qwindow_out --> Average constant renewal air flow going through the window when it is opened
        • ζwindow --> It is worth 0 when it is always closed and 1 when it is opened
 
-In the same way, the renewable of air flow through the door is given by:
+- In the same way, the renewable of air flow through the door is given by:
        • Qcorridor = Qdoor(0) + ζdoor*Qdoor_corridor
        Where:
        • Qcorridor --> Air flow exchanged from indoor and outdoor.
@@ -42,7 +42,7 @@ In the same way, the renewable of air flow through the door is given by:
        • ζdoor*Qdoor_corridor --> Average constant renewal of air flow going through the corridor when the door is opened
        • ζdoor --> It is worth 0 when it is always closed and 1 when it is opened
 
-The air mass balance leads to:
+- The air mass balance leads to:
        • V dΓoffice/dt = −(Qout + Qcorridor)Γoffice + QoutΓout + QcorridorΓcorridor +Sbreath*n
        Where:
        • Γ, the CO2 concentration and Qout ≈ 395ppm, the outdoor average CO2 concentration
@@ -51,11 +51,13 @@ The air mass balance leads to:
        • n, the number of occupants in the office
 
 Considering average values over a time period of Ts = 3600 seconds, the differential equation can be solved to get a recurrent equation (Xk means average value of X during period [kTs, (k +1)Ts]:
+- 
 ![image](https://user-images.githubusercontent.com/49452402/139601293-f9030b13-5367-4cf1-8b6d-2b6353bd8edc.png)
-       
+
+<p></p>
 Where:
 ![image](https://user-images.githubusercontent.com/49452402/139601301-93264c0b-a555-46f6-ad87-04966f63e21d.png)
-       
+<p></p>
 The estimate comes directly from the equation. It yields:
        ![image](https://user-images.githubusercontent.com/49452402/139601354-fc2579a3-b296-4ade-8154-a16a6803a138.png)
        In order to produce numerical answers, I used the following values for the variables:
