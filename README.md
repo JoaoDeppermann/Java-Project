@@ -15,14 +15,17 @@ Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 Given the data provided in the .csv file, it is possible to estimate the occupation of the office in 3 different ways:
 
-Markup : 1. Laptop power consumption
-            1. The consumption of each one of the 4 laptops is measured by a power meter (variable ‘power_laptopX_zoneY’). If the average consumption is greater than the standby consumption (15W), it is considered that someone is working on the computer
+Markup : 
+
+         1. Laptop power consumption
+            The consumption of each one of the 4 laptops is measured by a power meter (variable ‘power_laptopX_zoneY’). If the average consumption is greater than the standby consumption (15W), it is considered that someone is working on the computer
+            
          2. Motion detections
-            1. It is considered that the number of motions detected within an hour is proportional to the number of occupants in the office. In order to determine the best proportional coefficient, a simple dichotomy algorithm (considering the laptop consumption based estimation as the actual occupancy) was implemented in the "DichotomicScaler" class.
+            It is considered that the number of motions detected within an hour is proportional to the number of occupants in the office. In order to determine the best proportional coefficient, a simple dichotomy algorithm (considering the laptop consumption based estimation as the actual occupancy) was implemented in the "DichotomicScaler" class.
             ![image](https://user-images.githubusercontent.com/49452402/139597896-ea42ce53-ac92-48b7-97c2-e9db23d03f0c.png)
 
          3. CO2 concentration
-            1. In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
+            In order to estimate the occupancy based on the CO2 level, it is necessary to study the air mass balance. The air flow exchanged from indoor and outdoor can be decomposed into:
             Qout = Qout(0) + ζwindow*Qwindow_out
             Qout --> Air flow exchanged from indoor and outdoor.
             Qout(0) --> Air infiltration
