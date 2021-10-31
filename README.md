@@ -57,9 +57,10 @@ It is considered that the number of motions detected within an hour is proportio
 
 ![image](https://user-images.githubusercontent.com/49452402/139601301-93264c0b-a555-46f6-ad87-04966f63e21d.png)
 
-- The estimate comes directly from the equation. It yields:
+The estimate comes directly from the equation. It yields:
        ![image](https://user-images.githubusercontent.com/49452402/139601354-fc2579a3-b296-4ade-8154-a16a6803a138.png)
-       In order to produce numerical answers, I used the following values for the variables:
+
+In order to produce numerical answers, I used the following values for the variables:
        • Qout(0) = 25/3600 m3/s
        • Qcorridor(0) = 25/3600 m3/s
        • Qwindow_out = 150/3600 m3/s
